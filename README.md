@@ -19,3 +19,6 @@ porting by sputkin
     cd webos_ipk
     ares-package .
     ares-install com.github.umario.testing_0.0.1_arm.ipk -d {YOU DEVICE NAME}
+
+
+NOTE: LG has not made the NDK available to develop native applications. For bug compatibility , issues or information, send an email to sputk1n0@gmail.com
