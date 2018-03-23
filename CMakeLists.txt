@@ -18,10 +18,11 @@ elseif (${CMAKE_CXX_COMPILER_ID} STREQUAL "MSVC")
 	endif()
 endif()
 
-find_package(SDL2 REQUIRED)
-find_package(SDL2_Image REQUIRED)
-find_package(SDL2_Mixer REQUIRED)
-include_directories(${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_MIXER_INCLUDE_DIR})
+#find_package(SDL2 REQUIRED)
+#find_package(SDL2_Image REQUIRED)
+#find_package(SDL2_Mixer REQUIRED)
+
+include_directories("/usr/include/SDL2")
 
 file(COPY uNext/files DESTINATION .)
 

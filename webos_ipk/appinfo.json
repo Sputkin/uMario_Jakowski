@@ -1,0 +1,11 @@
+{
+  "id": "com.github.umario.testing",
+  "version": "0.0.1",
+  "vendor": "Łukasz Jakowski & ported by Sputkin",
+  "type": "native",
+  "main": "uMario",
+  "title": "uMario (super mario rebuild)",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "uiRevision": 2
+}
