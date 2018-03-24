@@ -65,11 +65,11 @@ CCore::CCore(void) {
 
 	this->mouseX = this->mouseY = 0;
 
-	CCFG::keyIDA = SDLK_a;
-	CCFG::keyIDS = SDLK_s;
-	CCFG::keyIDD = SDLK_d;
-	CCFG::keyIDSpace = SDLK_SPACE;
-	CCFG::keyIDShift = SDLK_LSHIFT;
+	CCFG::keyIDA = SDL_SCANCODE_A;
+	CCFG::keyIDS = SDL_SCANCODE_S;
+	CCFG::keyIDD = SDL_SCANCODE_D;
+	CCFG::keyIDSpace = SDL_SCANCODE_SPACE;
+	CCFG::keyIDShift = SDL_SCANCODE_LSHIFT;
 }
 
 CCore::~CCore(void) {
@@ -135,37 +135,37 @@ void CCore::InputMenu() {
 		CCFG::getMM()->setKey(mainEvent->key.keysym.sym);
 
 		switch(mainEvent->key.keysym.sym) {
-			case SDLK_s: case SDLK_DOWN:
+			case SDL_SCANCODE_S: case SDL_SCANCODE_DOWN:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->keyPressed(2);
 					keyMenuPressed = true;
 				}
 				break;
-			case SDLK_w: case SDLK_UP:
+			case SDL_SCANCODE_W: case SDL_SCANCODE_UP:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->keyPressed(0);
 					keyMenuPressed = true;
 				}
 				break;
-			case SDLK_KP_ENTER: case SDLK_RETURN:
+			case SDL_SCANCODE_KP_ENTER: case SDL_SCANCODE_RETURN:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->enter();
 					keyMenuPressed = true;
 				}
 				break;
-			case SDLK_ESCAPE:
+			case SDL_SCANCODE_ESCAPE:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->escape();
 					keyMenuPressed = true;
 				}
 				break;
-			case SDLK_LEFT: case SDLK_d:
+			case SDL_SCANCODE_LEFT: case SDL_SCANCODE_D:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->keyPressed(3);
 					keyMenuPressed = true;
 				}
 				break;
-			case SDLK_RIGHT: case SDLK_a:
+			case SDL_SCANCODE_RIGHT: case SDL_SCANCODE_A:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->keyPressed(1);
 					keyMenuPressed = true;
@@ -176,7 +176,7 @@ void CCore::InputMenu() {
 
 	if(mainEvent->type == SDL_KEYUP) {
 		switch(mainEvent->key.keysym.sym) {
-			case SDLK_s: case SDLK_DOWN: case SDLK_w: case SDLK_UP: case SDLK_KP_ENTER: case SDLK_RETURN: case SDLK_ESCAPE: case SDLK_a: case SDLK_RIGHT: case SDLK_LEFT: case SDLK_d:
+			case SDL_SCANCODE_S: case SDL_SCANCODE_DOWN: case SDL_SCANCODE_W: case SDL_SCANCODE_UP: case SDL_SCANCODE_KP_ENTER: case SDL_SCANCODE_RETURN: case SDL_SCANCODE_ESCAPE: case SDL_SCANCODE_A: case SDL_SCANCODE_RIGHT: case SDL_SCANCODE_LEFT: case SDL_SCANCODE_D:
 				keyMenuPressed = false;
 				break;
 			default:
@@ -230,7 +230,7 @@ void CCore::InputPlayer() {
 				}
 			}
 		switch(mainEvent->key.keysym.sym) {
-			case SDLK_KP_ENTER: case SDLK_RETURN: case SDLK_ESCAPE:
+			case SDL_SCANCODE_KP_ENTER: case SDL_SCANCODE_RETURN: case SDL_SCANCODE_ESCAPE:
 				keyMenuPressed = false;
 				break;
 		}
@@ -273,12 +273,12 @@ void CCore::InputPlayer() {
 		}
 
 		switch(mainEvent->key.keysym.sym) {
-			case SDLK_KP_ENTER: case SDLK_RETURN:
+			case SDL_SCANCODE_KP_ENTER: case SDL_SCANCODE_RETURN:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->enter();
 					keyMenuPressed = true;
 				}
-			case SDLK_ESCAPE:
+			case SDL_SCANCODE_ESCAPE:
 				if(!keyMenuPressed && CCFG::getMM()->getViewID() == CCFG::getMM()->eGame) {
 					CCFG::getMM()->resetActiveOptionID(CCFG::getMM()->ePasue);
 					CCFG::getMM()->setViewID(CCFG::getMM()->ePasue);

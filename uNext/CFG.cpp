@@ -59,25 +59,25 @@ std::string CCFG::getKeyString(int keyID) {
 	}
 
 	switch(keyID) {
-		case SDLK_ESCAPE:
+		case SDL_SCANCODE_ESCAPE:
 			return "ESCAPE";
-		case SDLK_SPACE:
+		case SDL_SCANCODE_SPACE:
 			return "SPACE";
-		case SDLK_LSHIFT:
+		case SDL_SCANCODE_LSHIFT:
 			return "LSHIFT";
-		case SDLK_RSHIFT:
+		case SDL_SCANCODE_RSHIFT:
 			return "RSHIFT";
-		case SDLK_UP:
+		case SDL_SCANCODE_UP:
 			return "UP";
-		case SDLK_DOWN:
+		case SDL_SCANCODE_DOWN:
 			return "DOWN";
-		case SDLK_RIGHT:
+		case SDL_SCANCODE_RIGHT:
 			return "RIGHT";
-		case SDLK_LEFT:
+		case SDL_SCANCODE_LEFT:
 			return "LEFT";
-		case SDLK_LCTRL:
+		case SDL_SCANCODE_LCTRL:
 			return "LCTRL";
-		case SDLK_RCTRL:
+		case SDL_SCANCODE_RCTRL:
 			return "RCTRL";
 	}
 

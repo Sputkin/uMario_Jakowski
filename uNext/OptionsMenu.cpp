@@ -155,7 +155,7 @@ void OptionsMenu::escape() {
 }
 
 void OptionsMenu::setKey(int keyID) {
-	if(inSetKey && keyID != SDLK_KP_ENTER && keyID != SDLK_RETURN && keyID != SDLK_ESCAPE) {
+	if(inSetKey && keyID != SDL_SCANCODE_KP_ENTER && keyID != SDL_SCANCODE_RETURN && keyID != SDL_SCANCODE_ESCAPE) {
 		switch(activeMenuOption) {
 			case 1:
 				CCFG::keyIDA = keyID;
@@ -194,7 +194,7 @@ void OptionsMenu::setKey(int keyID) {
 				break;
 		}
 		resetSetKey = true;
-	} else if(keyID == SDLK_ESCAPE) {
+	} else if(keyID == SDL_SCANCODE_ESCAPE) {
 		resetSetKey = true;
 	}
 }
