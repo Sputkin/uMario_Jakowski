@@ -10,7 +10,7 @@ porting by sputkin
 
 ## Building 
 
-    Coming soon
+    See NOTE
 
 ## Installation
 
