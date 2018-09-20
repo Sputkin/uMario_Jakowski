@@ -17,7 +17,6 @@ porting by sputkin
     install lg sdk http://webostv.developer.lge.com/sdk/download/download-sdk/
     active dev mode http://webostv.developer.lge.com/develop/app-test/
     cd webos_ipk
-    ares-package .
     ares-install com.github.umario.testing_0.0.1_arm.ipk -d {YOU DEVICE NAME}
 
 
