@@ -17,7 +17,7 @@ porting by sputkin
     install lg sdk http://webostv.developer.lge.com/sdk/installation/
     active dev mode http://webostv.developer.lge.com/develop/app-test/
     cd webos_ipk
-    ares-install com.github.umario.testing_0.0.1_arm.ipk -d {YOU DEVICE NAME}
+    ares-install com.github.umario.testing_0.0.1_arm.ipk -d {YOUR DEVICE NAME}
 
 
 NOTE: LG has not made the NDK available to develop native applications. For bug compatibility , issues or information, send an email to sputk1n0@gmail.com
