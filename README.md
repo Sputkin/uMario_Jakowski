@@ -3,6 +3,7 @@
 uMario C++/SDL2 Game by Łukasz Jakowski
 porting by sputkin
 
+
 ## Game Preview
 
     a first test build can be found in the webos_ipk folder
@@ -18,6 +19,14 @@ porting by sputkin
     active dev mode http://webostv.developer.lge.com/develop/app-test/
     cd webos_ipk
     ares-install com.github.umario.testing_0.0.1_arm.ipk -d {YOUR DEVICE NAME}
+
+
+## Screenshots
+
+
+   ![Preview](https://raw.githubusercontent.com/Sputkin/uMario_Jakowski_WebOS/master/img/screenshot2.jpg)
+   
+   ![Preview](https://raw.githubusercontent.com/Sputkin/uMario_Jakowski_WebOS/master/img/screenshot.jpg)
 
 
 NOTE: LG has not made the NDK available to develop native applications. For bug compatibility , issues or information, send an email to sputk1n0@gmail.com
